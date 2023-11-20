@@ -64,13 +64,20 @@ The first model employed logistic regression and sampled the data points once fo
 
 Machine Learning Model 1:
 
-'*''-' Overall Accuracy: 0.99.
-Precision: for healthy loans, the precision is 1.00, for high-risk loans, the precision is 0.87.
-Recall: for healthy loans, the recall score is 1.00, for high-risk loans, the recall score is 0.89.
-F1-Score: for healthy loans, the f1-score is 1.00, for high-risk loans, the f1-score is 0.88.
+* Overall Accuracy: 0.95.
+* Precision: for healthy loans, the precision is 1.00 and for high-risk loans, the precision is 0.85.
+* Recall: for healthy loans, the recall score is 0.99 and for high-risk loans, the recall score is 0.91.
+* F1-Score: for healthy loans, the f1-score is 1.00, for high-risk loans, the f1-score is 0.88.
+
 Machine Learning Model 2 (Resampled Data):
 
-Overall Accuracy: 1.00.
-Precision: for healthy loans, the precision is 1.00, for high-risk loans, the precision is 0.87.
-Recall: for healthy loans, the recall score is 1.00, for high-risk loans, the recall score is 1.00.
-F1-Score: for healthy loans, the f1-score is 1.00, for high-risk loans, the f1-score is 0.93.
+* Overall Accuracy: 0.99.
+* Precision: for healthy loans, the precision is 1.00 and for high-risk loans, the precision is 0.84.
+* Recall: for healthy loans, the recall score is 0.99 and for high-risk loans, the recall score is 0.99.
+* F1-Score: for healthy loans, the f1-score is 1.00 and for high-risk loans, the f1-score is 0.91.
+
+# Summary
+
+The logistic regression model with resampled data (Model 2) demonstrates precision of 100% for healthy, low-risk loans and 84% for high-risk loans, with a balanced accuracy of 100%. While the classification report overall remains similar between the two models, the notable change is the increase in balanced accuracy from 99% to 100%. However, caution is advised, as this improvement could be attributed to overfitting, emphasizing the need for additional cross-validation techniques to validate the models.
+
+Model 2 is more adept at avoiding false negatives (missed high-risk loans). Despite slightly more false positives (predicting low-risk when the actual is high-risk) compared to Model 1, the overall lower rate of false predictions in the testing data makes Model 2 the preferable choice, particularly due to its high accuracy and recall in identifying high-risk loans. It's worth noting that neither model achieves precision above 90% for high-risk loans, acknowledging the inherent challenge of achieving extremely high precision in scenarios with imbalanced classes.
