@@ -1,7 +1,7 @@
 # Credit-Risk-Classification
 
-# Credit-risk-classification
 # Background
+
 In this Challenge, you’ll use various techniques to train and evaluate a model based on loan risk. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
 # Instructions
@@ -64,7 +64,7 @@ The first model employed logistic regression and sampled the data points once fo
 
 Machine Learning Model 1:
 
-*- Overall Accuracy: 0.99.
+'*''-' Overall Accuracy: 0.99.
 Precision: for healthy loans, the precision is 1.00, for high-risk loans, the precision is 0.87.
 Recall: for healthy loans, the recall score is 1.00, for high-risk loans, the recall score is 0.89.
 F1-Score: for healthy loans, the f1-score is 1.00, for high-risk loans, the f1-score is 0.88.
